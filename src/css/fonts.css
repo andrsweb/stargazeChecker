@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Madimi One';
+    src: url('../fonts/MadimiOne-Regular.eot');
+    src: url('../fonts/MadimiOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MadimiOne-Regular.woff2') format('woff2'),
+        url('../fonts/MadimiOne-Regular.woff') format('woff'),
+        url('../fonts/MadimiOne-Regular.ttf') format('truetype'),
+        url('../fonts/MadimiOne-Regular.svg#MadimiOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
