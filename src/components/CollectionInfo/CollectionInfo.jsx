@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './CollectionInfo.css'
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 import Img from '../Img/Img'
 
