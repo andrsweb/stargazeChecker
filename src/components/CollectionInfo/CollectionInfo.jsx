@@ -13,9 +13,6 @@ const CollectionInfo = ({ collectionAddr }) => {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     const [collectionData, setCollectionData] = useState(null)
-    const [floorPriceChange, setFloorPriceChange] = useState(null)
-    const [highestOfferChange, setHighestOfferChange] = useState(null)
-
 
     useEffect(() => {
         const fetchData = async () => {
@@ -75,31 +72,6 @@ const CollectionInfo = ({ collectionAddr }) => {
             }
         })
     }
-
-    useEffect(() => {
-        if (collectionData && collectionData.floorPrice && collectionData.highestOffer) {
-            const oldFloorPrice = collectionData.floorPrice
-            const newFloorPrice = collectionData.floorPrice
-            const oldHighestOffer = collectionData.highestOffer.price
-            const newHighestOffer = collectionData.highestOffer.price
-
-            if (oldFloorPrice < newFloorPrice) {
-                setFloorPriceChange('up')
-            } else if (oldFloorPrice > newFloorPrice) {
-                setFloorPriceChange('down')
-            } else {
-                setFloorPriceChange(null)
-            }
-
-            if (oldHighestOffer < newHighestOffer) {
-                setHighestOfferChange('up')
-            } else if (oldHighestOffer > newHighestOffer) {
-                setHighestOfferChange('down')
-            } else {
-                setHighestOfferChange(null)
-            }
-        }
-    }, [collectionData])
   
     const formatCurrency = (amount) => {
         const formatter = new Intl.NumberFormat('en-US', {
@@ -152,34 +124,23 @@ const CollectionInfo = ({ collectionAddr }) => {
 
                 <div className="data-price-wrapper">
                     <div className="data-price-inner">
-                        {collectionData.floorPrice ? (
-                            <div className={`data-inner ${floorPriceChange ? floorPriceChange : ''}`}>
+                        {collectionData.floorPrice ? 
+                            <div className='data-inner'>
                                 <span>Floor Price:</span>
-                                <div className='price-wrapper'>
-                                    {formatCurrency(collectionData.floorPrice)}
-                                    {floorPriceChange === 'up' && <span className="price-arrow">&#8593;</span>}
-                                    {floorPriceChange === 'down' && <span className="price-arrow">&#8595;</span>}
-                                </div>
+                                <div className='price-wrapper'>{formatCurrency(collectionData.floorPrice)}</div>
                             </div>
-                        ) : (
-                            <span className='data-inner no-price'>No floor price 😢</span>
-                        )}
+                            : <span className='data-inner no-price'>No floor price 😢</span> 
+                        }
 
                         {collectionData.highestOffer ? (
-                            <div className={`data-inner ${highestOfferChange ? highestOfferChange : ''}`}>
+                            <div className='data-inner'>
                                 <span>Highest Offer:</span>
-                                <div className='price-wrapper'>
-                                    {formatCurrency(collectionData.highestOffer.price)}
-                                    {highestOfferChange === 'up' && <span className="price-arrow">&#8593;</span>}
-                                    {highestOfferChange === 'down' && <span className="price-arrow">&#8595;</span>}
-                                </div>
+                                <div className='price-wrapper'>{formatCurrency(collectionData.highestOffer.price)}</div>
                             </div>
-                        ) : (
-                            <span className='data-inner no-price'>No highest offer price 😢</span>
-                        )}
+                        ) : <span className='data-inner no-price'>No highest offer price 😢</span> }
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
     )
 }
