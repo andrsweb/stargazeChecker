@@ -1,0 +1,16 @@
+.button {
+    font-family: var(--ff);
+    font-weight: var(--fw-bold);
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 10px;
+    font-size: 25px;
+    line-height: 1;
+    border-radius: var(--bord10);
+    text-transform: uppercase;
+}
+
+.button.disabled {
+    opacity: var(--op);
+    cursor: not-allowed;
+}

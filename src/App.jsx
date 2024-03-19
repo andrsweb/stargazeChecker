@@ -1,5 +1,6 @@
 import React from 'react'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
+import Header from './components/Header/Header';
 import CollectionInfo from './components/CollectionInfo/CollectionInfo'
 
 const client = new ApolloClient({
@@ -11,7 +12,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <header className="header"></header>
+        <Header />
         <section className='collections'>
             <div className="container">
                 <div className="collections-wrapper">

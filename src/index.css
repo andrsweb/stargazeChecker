@@ -1,4 +1,7 @@
 @import './css/fonts.css';
+@import './css/colors.css';
+@import './css/typography.css';
+@import './css/other.css';
 
 /* Grid */
 .container {
@@ -66,6 +69,17 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: opacity ease var(--tr);
+}
+
+button:hover {
+    opacity: var(--op);
 }
 
 #root {
@@ -149,6 +163,8 @@ fieldset {
 }
 
 p {
+    font-family: var(--ff);
+    font-weight: var(--fw-bold);
 	margin: 0;
 	padding: 0;
 }
@@ -157,3 +173,35 @@ b,
 strong {
 	font-weight: 700
 }
+
+.cursor-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #cursor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradientMove 5s infinite;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

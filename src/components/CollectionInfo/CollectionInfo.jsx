@@ -95,17 +95,17 @@ const CollectionInfo = ({ collectionAddr }) => {
 
                 <div className="creator-info">
                     <p>
-                        <span>Creator:</span> <a href={`https://www.stargaze.zone/m/${collectionData.contractUri}/tokens`}>View →</a>
+                        <span>Creator:</span> <a href={`https://www.stargaze.zone/m/${collectionData.contractUri}/tokens`}>View</a>
                     </p>
-                    <p><span>Wallet:</span> <a href={`https://www.stargaze.zone/p/${collectionData.creator.address}`} target={"_blanc"}>View →</a></p>
+                    <p><span>Wallet:</span> <a href={`https://www.stargaze.zone/p/${collectionData.creator.address}`} target={"_blanc"}>View</a></p>
                     {collectionData.website ? (
-                        <p><span>Website:</span> <a href={collectionData.website}>View →</a></p>
+                        <p><span>Website:</span> <a href={collectionData.website}>View</a></p>
                     ) : null}
                 </div>
 
                 <p className='data-desc'><span>Description:</span> {collectionData.description}</p>
 
-                <p><span>Creation Time:</span> {new Date(Number(collectionData.creationTime) / 1000000).toLocaleString()}</p>
+                <p className='data-time'><span>Created:</span> {new Date(Number(collectionData.creationTime) / 1000000).toLocaleString()}</p>
             </div>
 
             <div className='data-image-wrapper'>
@@ -116,7 +116,7 @@ const CollectionInfo = ({ collectionAddr }) => {
                 ) : <span className='data-inner'>Image don't loading 😢</span>}
 
                 <div className="data-status">
-                    <p>Status:<span> {collectionData.mintStatus}</span></p>
+                    <p>Status: <span>{collectionData.mintStatus}</span></p>
                 </div>
 
                 <div className="data-price-wrapper">

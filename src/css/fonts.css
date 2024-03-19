@@ -1,13 +1,60 @@
 @font-face {
-    font-family: 'Madimi One';
-    src: url('../fonts/MadimiOne-Regular.eot');
-    src: url('../fonts/MadimiOne-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/MadimiOne-Regular.woff2') format('woff2'),
-        url('../fonts/MadimiOne-Regular.woff') format('woff'),
-        url('../fonts/MadimiOne-Regular.ttf') format('truetype'),
-        url('../fonts/MadimiOne-Regular.svg#MadimiOne-Regular') format('svg');
+    font-family: 'Freaks of Nature massive';
+    src: url('../fonts/FreaksofNaturemassive.eot');
+    src: url('../fonts/FreaksofNaturemassive.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FreaksofNaturemassive.woff2') format('woff2'),
+        url('../fonts/FreaksofNaturemassive.woff') format('woff'),
+        url('../fonts/FreaksofNaturemassive.ttf') format('truetype'),
+        url('../fonts/FreaksofNaturemassive.svg#FreaksofNaturemassive') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: 'Freaks of Nature';
+    src: url('../fonts/FreaksofNature.eot');
+    src: url('../fonts/FreaksofNature.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FreaksofNature.woff2') format('woff2'),
+        url('../fonts/FreaksofNature.woff') format('woff'),
+        url('../fonts/FreaksofNature.ttf') format('truetype'),
+        url('../fonts/FreaksofNature.svg#FreaksofNature') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stencil Pixel-7';
+    src: url('../fonts/StencilPixel-7.eot');
+    src: url('../fonts/StencilPixel-7.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StencilPixel-7.woff2') format('woff2'),
+        url('../fonts/StencilPixel-7.woff') format('woff'),
+        url('../fonts/StencilPixel-7.ttf') format('truetype'),
+        url('../fonts/StencilPixel-7.svg#StencilPixel-7') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Upheaval Pro';
+    src: url('../fonts/UpheavalPro-Regular.eot');
+    src: url('../fonts/UpheavalPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UpheavalPro-Regular.woff2') format('woff2'),
+        url('../fonts/UpheavalPro-Regular.woff') format('woff'),
+        url('../fonts/UpheavalPro-Regular.ttf') format('truetype'),
+        url('../fonts/UpheavalPro-Regular.svg#UpheavalPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
 
