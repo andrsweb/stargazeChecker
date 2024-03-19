@@ -1,5 +1,10 @@
 :root {
     --accent: #db2777;
+    --active: #fd177f;
     --white: #ffffff;
+    --smoke: #fdf5f5;
     --black: #111111;
+    --dark: #352e2e;
+    --aqua: #0efaee;
+    --dark-green: #145f0a;
 }

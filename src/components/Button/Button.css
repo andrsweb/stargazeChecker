@@ -6,8 +6,19 @@
     padding: 10px;
     font-size: 25px;
     line-height: 1;
-    border-radius: var(--bord10);
     text-transform: uppercase;
+    transition: filter ease var(--tr),
+        background-color ease var(--tr);
+}
+
+.button:hover {
+    opacity: 1;
+    filter: blur(1px);
+}
+
+.button:active {
+    filter: blur(2px);
+    background-color: #fd177f;
 }
 
 .button.disabled {

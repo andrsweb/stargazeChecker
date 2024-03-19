@@ -16,7 +16,7 @@ function App() {
         <section className='collections'>
             <div className="container">
                 <div className="collections-wrapper">
-                    <CollectionInfo collectionAddr={"stars1gy26xd5earv7m3ugqrp8lfx2jjsmzg5jcf7rkmh2jc24zl8vt3wsm2vnpr"}/>
+                    <CollectionInfo collectionAddr={"stars1py9rk2aupqavvm92470ujc6dfekas7lfe83jj28s6aue44mgn7lqaj5pju"}/>
                     <CollectionInfo collectionAddr={"stars1lue0e6aq8xnzk4c5zp7xekvx5nlk8jphzac4agsdd74w2tvezxgsk2d06w"}/>
                     <CollectionInfo collectionAddr={"stars1fk5hrdypsjvga3wa5nz048uckhxh7vkuf6ssthtdur3mmfye4rtqkndfn8"}/>
                     <CollectionInfo collectionAddr={"stars1nr950lfghsjd2jssn0gjws4fu0fequpagpcwhnsdkrxlck6pq53qcln2z8"}/>

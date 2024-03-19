@@ -14,8 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--white);
-    border-image: linear-gradient(var(--accent), #0efaee) 1;
+    background-color: var(--smoke);
+    border-image: linear-gradient(var(--accent), var(--aqua)) 10;
     border-width: 5px;
     border-style: solid;
 }
@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     font-family: var(--ff-black);
-    color: var(--black);
+    color: var(--dark);
     font-weight: var(--fw-regular);
     text-transform: uppercase;
     font-size: 22px;
@@ -61,8 +61,13 @@
 }
 
 .creator-info a {
-    color: #111111;
+    color: var(--dark-green);
     text-decoration: none;
+    transition: filter ease var(--tr);
+}
+
+.creator-info a:hover {
+    filter: blur(1px);
 }
 
 .data-image-wrapper {
@@ -123,7 +128,6 @@
     gap: 10px;
     background-color: var(--white);
     padding: 5px;
-    border-radius: 10px;
     color: var(--black);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     margin-bottom: 8px;
@@ -139,8 +143,19 @@
     right: 5px;
     padding: 5px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    z-index: 1;
+}
+
+.data-status.end img {
+    position: absolute;
+    right: -6px;
+    top: -26px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    z-index: -1;
+    transform: rotate(10deg);
 }
 
 .data-status span {
@@ -148,6 +163,10 @@
     font-weight: var(--fw-regular);
     font-size: 16px;
     color: green;
+}
+
+.data-status.end span {
+    color: var(--accent);
 }
 
 .price-wrapper {
